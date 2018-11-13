@@ -1123,21 +1123,15 @@ var/global/curr_day = null
 	set hidden = 1
 	src << link("http://wiki.ss13.co")
 
-/client/verb/map()
+/client/verb/discord()
 	set category = "Commands"
-	set name = "Map"
-	set desc = "Open an interactive map in your browser"
+	set name = "Discord"
+	set desc = "Gives you an invite link to the offical discord"
 	set hidden = 1
 	if (map_setting == "COG2")
-		src << link("http://goonhub.com/maps/cogmap2")
+		src << link("https://discord.gg/FhUGjE4")
 	else if (map_setting == "DESTINY")
-		src << link("http://goonhub.com/maps/destiny")
+		src << link("https://discord.gg/FhUGjE4")
 	else
-		src << link("http://goonhub.com/maps/cogmap")
+		src << link("https://discord.gg/FhUGjE4")
 
-/client/verb/forum()
-	set category = "Commands"
-	set name = "Forum"
-	set desc = "Open the Forum in your browser"
-	set hidden = 1
-	src << link("http://forum.ss13.co")
